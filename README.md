@@ -16,6 +16,8 @@
 - Semaphore
 - Monitor
 - **Lock-free data structure**
+
+
 Lock-free data structure는 여러 방법 중 하나입니다. Semaphore나 Monitor는 자원을 Lock함으로써 특정 프로세스가 자원을 이용하고 있을 때 다른 프로세스가 해당 자원에 접근하지 못하게 하는 원리지만 lock-free data structure는 lock에 의존하지 않습니다. 대신 **CAS(Compare And Swap)**라는 operation을 이용하여 자원의 취득을 atomic하게 처리합니다.
 
 ## ABA problem
